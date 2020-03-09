@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** Navbar ***/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 6% 25px 10%;
+    font-size: 20px;
+    background-image: white;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.267);
+    transition: box-shadow 0.5s ease;
+}
+
+header:hover {
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.342)
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    font-family: 'Montserrat';
+    font-size: 30px;
+}
+
+.logoDesc {
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li a {
+    padding: 15px 20px;
+    transition: all 1s ease;
+    font-family: 'Montserrat';
+}
+
+li a:hover {
+    background-color: rgba(217, 217, 221, 0.829);
+}
+
+@media only screen and (max-width:600px) {
+    header {
+        font-size: 13px;
+    }
+}
+
+/* front page content */
+
+.content {
+    margin: 150px 0 0 10px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    width: 2400px;
+    height: 600px;
+}
+
+.img-fluid {
+    margin-left: 10px;
+}
